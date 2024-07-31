@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.tingeso</groupId>
-	<artifactId>msconfigserver</artifactId>
+	<artifactId>eureka-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>msconfigserver</name>
-	<description>Demo project for Spring Boot</description>
+	<name>eureka-server</name>
+	<description>Eureka server</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -33,9 +33,14 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-config-server</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+			<version>4.1.1</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-config-client</artifactId>
+			<version>4.1.1</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
