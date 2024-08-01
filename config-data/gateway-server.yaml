@@ -24,4 +24,4 @@ spring:
         - id: ms1
           uri: lb://ms1:8090
           predicates:
-            - Path=/ms1/**
+            - Path=/vehiculos/**
