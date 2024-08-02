@@ -17,6 +17,7 @@ public class VehiculoEntity {
     private String tipoVehiculo;
     private int anioFabricacion;
     private String tipoMotor;
+    private int numAsientos;
     private int kilometros;
 
 }
